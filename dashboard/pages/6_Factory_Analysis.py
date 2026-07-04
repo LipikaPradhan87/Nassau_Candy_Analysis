@@ -99,12 +99,12 @@ fig = px.bar(
     title="Sales by Factory",
     color_discrete_sequence=["#9C27B0"] 
 )
-fig.write_image(
-    "../visuals/sales_by_factory.png",
-    width=1200,
-    height=700,
-    scale=2
-)
+# fig.write_image(
+#     "../visuals/sales_by_factory.png",
+#     width=1200,
+#     height=700,
+#     scale=2
+# )
 
 st.plotly_chart(fig, use_container_width=True)
 
@@ -116,12 +116,12 @@ fig = px.bar(
     title="Gross Profit by Factory",
     color_discrete_sequence=["#4CAF50"] 
 )
-fig.write_image(
-    "../visuals/gross_profit_by_factory.png",
-    width=1200,
-    height=700,
-    scale=2
-)
+# fig.write_image(
+#     "../visuals/gross_profit_by_factory.png",
+#     width=1200,
+#     height=700,
+#     scale=2
+# )
 
 st.plotly_chart(fig, use_container_width=True)
 

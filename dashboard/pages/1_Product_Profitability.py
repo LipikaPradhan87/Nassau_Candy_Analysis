@@ -49,12 +49,12 @@ fig = px.bar(
     color_discrete_sequence=["#4CAF50"] 
 )
 
-fig.write_image(
-    "../visuals/top_10_products_gross_profit.png",
-    width=1200,
-    height=700,
-    scale=2
-)
+# fig.write_image(
+#     "../visuals/top_10_products_gross_profit.png",
+#     width=1200,
+#     height=700,
+#     scale=2
+# )
 
 st.plotly_chart(fig)
 

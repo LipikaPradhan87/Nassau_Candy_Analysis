@@ -73,12 +73,12 @@ fig = px.bar(
     title="Gross Profit by Division",
     color_discrete_sequence=["#2196F3"] 
 )
-fig.write_image(
-    "../visuals/gross_profit_by_division.png",
-    width=1200,
-    height=700,
-    scale=2
-)
+# fig.write_image(
+#     "../visuals/gross_profit_by_division.png",
+#     width=1200,
+#     height=700,
+#     scale=2
+# )
 
 st.plotly_chart(fig, use_container_width=True)
 

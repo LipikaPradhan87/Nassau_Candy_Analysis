@@ -66,12 +66,12 @@ fig = px.scatter(
         "#795548"
     ]
 )
-fig.write_image(
-    "../visuals/cost_vs_sales.png",
-    width=1200,
-    height=700,
-    scale=2
-)
+# fig.write_image(
+#     "../visuals/cost_vs_sales.png",
+#     width=1200,
+#     height=700,
+#     scale=2
+# )
 
 st.plotly_chart(fig, use_container_width=True)
 
