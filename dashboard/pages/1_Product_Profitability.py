@@ -6,13 +6,14 @@ import seaborn as sns
 import plotly.express as px
 import plotly.graph_objects as go
 import os
-
+from pathlib import Path
+BASE_DIR = Path(__file__).resolve().parents[1]
 
 st.subheader("Top 10 Products by Gross Profit")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("../data/cleaned/nassau_featured.csv")
+    return pd.read_csv(BASE_DIR / "data" / "cleaned" / "nassau_featured.csv")
 
 df = load_data()
 

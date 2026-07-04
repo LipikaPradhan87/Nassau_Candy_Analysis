@@ -5,6 +5,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 import plotly.graph_objects as go
+from pathlib import Path
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 
 st.set_page_config(
     page_title="Nassau Candy Dashboard",
@@ -18,7 +21,7 @@ st.markdown("### Product Line Profitability & Margin Performance Analysis")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("../data/cleaned/nassau_featured.csv")
+    return pd.read_csv(BASE_DIR / "data" / "cleaned" / "nassau_featured.csv")
 
 df = load_data()
 st.write(df.head())
