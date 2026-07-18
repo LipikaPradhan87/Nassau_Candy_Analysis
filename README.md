@@ -166,7 +166,7 @@ The dataset contains sales transactions for Nassau Candy Distributor.
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/LipikaPradhan87/Nassau_Candy_Analysis
 ```
 
 ### 2. Navigate to the Project
@@ -254,7 +254,7 @@ The analysis helps identify:
 
 ## Author
 
-**Sonali**
+**Lipika Pradhan**
 
 Data Analytics Project
 
